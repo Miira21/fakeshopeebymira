@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Lora:ital,wght@1,600&family=Rancho&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.body{
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    background: linear-gradient(-180deg, #F6432E, #FE6233);
+    height: 119px;
+    width: 100%; /* biar mcm ni sbb sng adjust sndri */
+    position: fixed;
+    color: #F5F5F5;
+    padding-top: 10px;
+    z-index: 100;
+}
+
+.brand-img{
+    width: 0%;
+    height: auto;
+
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0px;
+}
+
+
+.navbar{
+    padding: 0;
+}
+
+/*  */
+.topmenu-l, .topmenu-r{
+    gap: 8px;
+}
+
+.hr1{
+    width: 2px;
+    height: 15px;
+    background-color: #F5F5F5;
+}
+
+.wrap-search{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: #F5F5F5;
+    border-radius: 6px;   
+}
+
+/* delete this klu x de effect */
+.wrap-icon-s{
+    position: absolute;
+    background: linear-gradient(-180deg, #F6432E, #FE6233);
+  border-radius: 3px;
+  width: 60px;
+  height: 87%;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* search box  */
+
+.form-control{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: none;
+  background-color: transparent;
+}
+
+/* check beza on border radius  */
+.form-control:focus{
+  box-shadow:none;
+  border-radius: 6px;
+}
+
+/* resize balik add to cart icon */
+.icon-shop {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+
+}
+
+.text-brand{
+  font-size: 30px ;
+  font-weight: 400;
+}
+
+/* yg bwh search box tu */
+.under-input span{
+  font-size: 12px;
+  font-weight: 100;
+}
+
+
+.wrap-navbar-input {
+  margin-left: 50px;
+  width: 67%;
+}
+
+/* carousel */
+.content {
+  position: relative;
+  top: 130px;
+  background-color: #f3f3f3;
+  /* background color kat sini */
+}
+
+.gap_searching{
+  position: relative;
+   bottom: 6px;
+   column-gap: 10px;
+   align-items: center;
+   cursor: pointer;
+}
+
+.content .shape1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotate(-90deg);
+  top: 17px;
+  left: 20px;
+}
+
+.content .shape2 {
+  position: absolute;
+  left: -3px;
+  top: -3px;
+}
+
+.content .shape3 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+.content .shape4 {
+  position: absolute;
+  transform: rotate(90deg);
+  right: 17px;
+  top: 20px;
+}
+
+.wrap-carousel{
+  height: 250px;
+  position: relative;
+  top: 30px;
+  z-index:2;
+}
+
+.carousel-indicators li {
+  border: 0;
+  border-radius: 20px;
+  width: 10px;
+  height: 10px;
+}
+
+/* selection sale */
+
+.sale-selection {
+  padding: 20px;
+  background-color: #ffffff;
+  margin-top: 60px;
+}
+
+.sale-selection p {
+  font-size: 14px;
+}
+
+.selection_gap{
+  cursor: pointer;
+}
+.dtext{
+  text-align: center;
+}
+
+/* selection for the icon border */
+.wrap-img {
+  border-radius: 12px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border: 1px solid #888;
+
+  padding: 5px;
+}
+
+.wrap-img img {
+  width: 100%;
+  height: 100%;
+}
+
+/* category */
+
+.categories{
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.categories h5{
+  color:#8E8E8E;
+  font-weight: 500;
+}
+
+.categories p {
+  font-size:14px;
+}
+
+/*  inner box  */
+.card-categories{
+  padding: 10px 5px;
+  width: 10%;
+  height: 140px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.cursor_pointer{
+  cursor: pointer;
+}
+
+.card-categories:hover{
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.card-categories .wrap-img {
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: none;
+}
+
+/* flash sale */
+
+.sale {
+  background-color: #ffffff;
+  padding: 13px;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+/* flash sale font color */
+.sale h5{
+  color: #F6432E;
+}
+
+/* this is the timer */
+.sale span {
+  background-color: black;
+  color: #fff;
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+.sale .discount span {
+  background-color: transparent;
+}
+
+
+/* change the lower angle  */
+.discount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: rgba(255, 212, 36, 0.9);
+  width: 60px;
+  height: 60px;
+}
+
+.total {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  /* display: flex; */
+}
+
+/* the box for the price */
+.text span {
+  background-color: #ffffff;
+  color: #f53d2d;
+  font-size: 20px;
+  padding: 0;
+  font-weight: 400;
+}
+
+.text span:first-child {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* progress sold bar */
+.progress{
+  left: 0;
+  width: 90%;
+  border-radius: 12px;
+  background-color: #ff000057;
+  display: flex;
+  height: 20px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;  
+}
+
+/* progress after bar */
+.progress-on1 {
+  background-color: red;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  z-index: 6;
+  height: 100%;
+}
+
+.progress-on2 {
+  background-color: red;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 35%;
+  z-index: 6;
+  height: 100%;
+}
+
+.progress-on3{
+  background-color: red;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 85%;
+  z-index: 6;
+  height: 100%;
+}
+
+.progress-on4 {
+  background-color: red;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 12%;
+  z-index: 6;
+  height: 100%;
+}
+
+.progress-on5 {
+  background-color: red;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 55%;
+  z-index: 6;
+  height: 100%;
+}
+
+.progress-on6 {
+  background-color: red;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  z-index: 6;
+  height: 100%;
+}
+
+.progress span {
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 12px;
+  position: relative;
+  z-index: 7;
+  font-weight: 100;
+}
+
+.row-card {
+  height: 250px;
+  border-top: 1px solid #9b9b9b7a;
+}
+
+.wrap-img-sale {
+  height: 70%;
+  width: 50%;
+  position: relative;
+}
+
+/* Shopee Mall */
+
+.shopee_mall_font{
+  font-size: 17px;
+  position: relative;
+  left: 30px;
+}
+.shopee_mall_header{
+  position: relative;
+  background-color: #F5F5F5;
+  width: 0;
+  height: 80px;
+}
+
+.shopee_mall_maintext{
+  gap: 8px;
+}
+.shopeemall_carousel_font{
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  font-size: larger;
+}
+
+/* Top Product */
+.top_product_font{
+  font-size: 17px;
+  position: relative;
+  left: 19px;
+}
+
+/* product */
+.card-product {
+  width: 20%;
+  border-top: 1px solid #d0d0d0;
+  border-right: 1px solid #d0d0d0;
+  border-left: 1px solid #d0d0d0;
+}
+
+.card-product span {
+  font-size: 14px;
+}
+
+.tp_position{
+  position: absolute;
+}
+
+.tp_borderbox{
+  height:300px;
+  width: 1200px;
+  position: absolute;
+}
+
+.tp_carousel{
+  top: 66px;
+}
+
+.carousel_tp{
+  position: relative;
+  padding-bottom: 100px;
+}
+
+
+/* Daily Discover */
+
+.daily_position{
+  position: relative;
+}
+
+.daily_font{
+  position: relative;
+  left: 45%;
+  font-size: 16px;
+  font-weight: 400;
+  
+}
+.nav-link.active {
+  border-bottom: 3px solid #F6432E !important;
+}
+
+.orange_pop{
+  transition: 0.2s;
+}
+
+.orange_pop:hover {
+  transform: scale(1.1);
+  border-style: solid;
+  border-width: thin;
+  border-color: #f53d2d;
+  cursor: pointer;
+}
+
+.similar_border{
+  position: relative;
+  text-align: center;
+  color: #F5F5F5;
+  background-color:#f53d2d;
+  z-index: -1;
+}
+
+
+.dd_font{
+  position: relative;
+  top: 15%;
+}
+
+.seemore_btn{
+  color: rgb(0, 0, 0); border: 1px solid #888; background-color: #ffffff;
+}
+.seemore_btn:hover{
+background-color: rgb(187, 187, 187);
+}
+
+
+/* footer */
+.footer {
+  border-top: 3px solid #f53d2d;
+  top: 180px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.footer {
+  font-size: 12px;
+}
+
+.title{
+  font-weight: 700;
+}
+
+.description{
+  font-weight: 400;
+}
+
+.description_title{
+  font-weight: 700;
+  color: #757594;
+}
+
+.object{
+  position: relative;
+  top: -10px;
+}
+
+.gap_footer{
+  column-gap: 1rem;
+}
+
+.footer_font{
+  text-decoration: none;
+  color: #8E8E8E;
+}
+
+.footer_font:hover{
+  transform: 0.2s;
+  color: #f53d2d;
+  cursor: pointer;
+
+}
+
+.footer_socmed{
+  font-size: 20px;
+}
+
+/* ni haaa ko ingat benda ni asyik lupa je */
+.footer_align{
+ line-height: 1.5rem;
+}
+
+.qr_footer{
+  height: 88px;
+  width: 88px;
+}
+
+.footer .title {
+  color: #757594;
+}
+
+.footer .description {
+  color: #888;
+  text-align: justify;
+}
